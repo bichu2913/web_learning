@@ -1,144 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Hub</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>BlackBox Learning</title>
+    <link rel="stylesheet" href="assets/css/blackbox.css" />
 </head>
+
 <body>
-
-    <!-- Header -->
     <header>
-        <div>
-
-        <!-- Logo -->
-        <img src="/assets/images/bbxlogo.png" alt="BlackBox Learning Logo" width="150">
-
-        <br><br>  
-
-        <!-- Navigation -->
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-
-        <br>
-
-        <!-- Signup Button -->
-        <button>Signup</button>
-
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/bbxlogo.png" alt="Logo" />
+            </div>
+            <nav>
+                <a href="#">Home</a><a href="#about">About</a><a href="#services">Services</a><a
+                    href="#articles">Articles</a><a href="#">Contact</a>
+            </nav>
+            <button class="signup-btn">Sign Up</button>
         </div>
-
     </header>
-
-    <br>
-
-    <!-- Sidebar -->
-    <aside>
-        <div>
-
-        <h2>Quick Links</h2>
-
-        <a href="#">Dashboard</a><br>
-        <a href="#">Courses</a><br>
-        <a href="#">Profile</a><br>
-        <a href="#">Settings</a>
-        </div>
-
-    </aside>
-
-    <br>
-
-    <!-- Welcome -->
-    <section>
-        <div>
-
-        <p>Welcome to the Learning Hub!</p>
-
-        </div>
-
-    </section>
-
-    <br>
-
-    <!-- About -->
-    <section>
-
-        <div>
-
-        <h1>About Us</h1>
-
-        <p>
-            We provide high-quality, interactive learning experiences
-            to help you master new skills and advance your career.
-        </p>
-
-        </div>
-
-    </section>
-
-    <br>
-
-    <!-- Services -->
-    <section>
-
-        <div>
-
-        <h1>Our Services</h1>
-
-        <ul>
-            <li>Live Classes</li>
-            <li>Recorded Sessions</li>
-            <li>Assignments &amp; Projects</li>
-            <li>Certification</li>
-        </ul>
-
-        </div>
-
-    </section>
-
-    <br>
-
-    <!-- Articles -->
-    <section>
-        <div>
-
-        <h1>Latest Articles</h1>
-
-        <article>
-
-            <h2>How to Learn Effectively</h2>
-
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Learn Without Limits</h1>
             <p>
-                Discover strategies to boost your learning efficiency
-                and retention.
+                Master HTML, CSS, JavaScript, Flutter and AI with practical projects.
             </p>
-
-        </article>
-
-        <article>
-
-            <h2>Top 5 Tech Skills in 2026</h2>
-
-            <p>
-                Stay ahead with the most in-demand technology skills
-                for the future.
-            </p>
-
-        </article>
-     </div>
+            <div class="hero-buttons">
+                <button class="primary-btn">Explore Courses</button><button class="secondary-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/lap.png" alt="Study" />
+        </div>
     </section>
-
-    <br>
-
-    <!-- Footer -->
+    <section class="about-row" id="about">
+        <aside>
+            <h2>Quick Links</h2>
+            <a href="#">Dashboard</a><a href="#">Courses</a><a href="#">Profile</a><a href="#">Settings</a>
+        </aside>
+        <div class="about-card">
+            <h2>About Learning Hub</h2>
+            <p>
+                Learning Hub helps students build industry-ready skills through
+                project-based learning.
+            </p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>📚 Live Classes</h3>
+            </div>
+            <div class="service-card">
+                <h3>💻 Projects</h3>
+            </div>
+            <div class="service-card">
+                <h3>🎓 Certification</h3>
+            </div>
+        </div>
+    </section>
+    <section class="articles" id="articles">
+        <h2>Latest Articles</h2>
+        <article>
+            <h3>How to Learn Effectively</h3>
+        </article>
+        <article>
+            <h3>Top 5 Tech Skills in 2026</h3>
+        </article>
+    </section>
     <footer>
-
-        <p>&copy; 2026 Learning Hub. All rights reserved.</p>
-
+        <p>© 2026 BlackBox Learning</p>
     </footer>
-
 </body>
+
 </html>
