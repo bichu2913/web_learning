@@ -1,0 +1,123 @@
+/* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600;700&display=swap');
+
+:root {
+  --swiggy-orange: #fc8019;
+  --text-dark: #3d4152;
+  --text-light: #686b78;
+  --bg-light: #f9f9f9;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif, Arial;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+  padding: 0.5rem 5%;
+}
+.navbar-brand img {
+  height: 40px;
+}
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-left: 20px;
+}
+.nav-link:hover {
+  color: var(--swiggy-orange);
+}
+
+/* Home Hero Section */
+.hero-section {
+  background-color: var(--swiggy-orange);
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.search-bar-container {
+  max-width: 800px;
+  margin: 30px auto;
+  display: flex;
+  gap: 10px;
+}
+.search-input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Category Cards */
+.category-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.category-card h3 {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+/* Grid Layouts for Food/Groceries */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 40px 5%;
+}
+.food-item {
+  text-align: center;
+}
+.food-item img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* App Download Banner */
+.app-banner {
+  background-color: #2b1e16;
+  color: var(--white);
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #02060c;
+  color: var(--white);
+  padding: 50px 5%;
+}
+.footer-links h5 {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+}

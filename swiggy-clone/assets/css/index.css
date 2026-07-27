@@ -1,0 +1,232 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f6f6; /* Light gray for the bottom sections */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================= HEADER & NAVBAR ================= */
+header {
+    position: absolute; /* Pulls the header over the orange hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    /* Invert logo to white if your logo is currently black */
+    filter: brightness(0) invert(1); 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.app-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.signin-btn {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    background-color: #ff5200; /* Swiggy Orange */
+    position: relative;
+    padding: 180px 0 100px 0; /* Top padding clears the absolute header */
+    overflow: hidden; /* Prevents side images from causing horizontal scroll */
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+/* Side Images Formatting */
+.left-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80%; /* Adjust based on your actual image aspect ratio */
+    z-index: 1;
+}
+
+.right-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%;
+    z-index: 1;
+}
+
+/* ================= SEARCH AREA ================= */
+.search-area {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.location-box, .search-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.location-box {
+    width: 35%;
+    color: #ff5200;
+}
+
+.search-box {
+    width: 65%;
+    color: #686b78;
+}
+
+.location-box input, .search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.location-box .fa-angle-down {
+    color: #686b78;
+}
+
+/* ================= SERVICES CARDS ================= */
+.services {
+    margin-top: -40px; /* Pulls cards slightly up over the orange background */
+    position: relative;
+    z-index: 20;
+    padding-bottom: 50px;
+}
+
+.services .container {
+    display: flex;
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 35px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 280px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.service-text h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #3d4152;
+    margin-bottom: 5px;
+}
+
+.service-text p {
+    font-size: 1.2rem;
+    color: #686b78;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-text span {
+    color: #ff5200;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.explore-btn {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    background-color: #ff5200;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.explore-btn i {
+    font-size: 0.9rem;
+}
+
+.service-image img {
+    position: absolute;
+    bottom: -10px; /* Slightly cuts off the bottom to match reference */
+    right: 0;
+    width: 200px; 
+    height: auto;
+}
