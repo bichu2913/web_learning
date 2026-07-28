@@ -1,138 +1,153 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: 'Proxima Nova', sans-serif, Arial;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-
-    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
-
-    color:white;
-
+/* ================= 1. TRANSPARENT HEADER ================= */
+.navbar.bg-white {
+    background-color: transparent !important; /* Overrides Bootstrap white background */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
 }
 
-header{
-
-    text-align:center;
-
-    padding:70px 20px;
-
+.navbar-brand img {
+    filter: brightness(0) invert(1); /* Turns the Swiggy logo white */
+    height: 50px;
 }
 
-header h1{
-
-    font-size:55px;
-
-    margin-bottom:15px;
-
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 25px;
 }
 
-header p{
-
-    font-size:20px;
-
-    color:#cbd5e1;
-
+/* Mimics the solid black "Sign In" button */
+.navbar-nav .nav-item:last-child .nav-link {
+    background-color: #000000;
+    color: #ffffff !important;
+    padding: 12px 30px;
+    border-radius: 12px;
+    margin-left: 20px;
 }
 
-.project-container{
-
-    width:90%;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-    gap:30px;
-
-    padding-bottom:60px;
-
+/* ================= 2. HERO SECTION ================= */
+.hero-section {
+    background-color: #ff5200; 
+    /* Increased bottom padding (200px) stretches the orange background downward */
+    padding: 160px 0 200px 0; 
+    position: relative;
+    
+    /* Injects the side food images via CSS background */
+    background-image: 
+        url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_490,h_590/TopLeft_3x_kyntum'), 
+        url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_490,h_590/TopRight_3x_njy29x');
+    background-position: left bottom, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25%, 32%; 
 }
 
-.card{
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(10px);
-
-    border:1px solid rgba(255,255,255,.15);
-
-    border-radius:18px;
-
-    padding:30px;
-
-    text-align:center;
-
-    transition:.4s;
-
+.hero-title {
+    color: #ffffff;
+    font-size: 3.8rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-.card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 35px rgba(0,0,0,.4);
-
+/* Search Bar Container */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.card h2{
-
-    margin-bottom:15px;
-
-    font-size:28px;
-
+.search-input {
+    padding: 18px 20px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
 }
 
-.card p{
-
-    color:#cbd5e1;
-
-    margin-bottom:25px;
-
-    line-height:1.6;
-
+.search-input:nth-child(1) {
+    width: 35%;
 }
 
-.card a{
-
-    display:inline-block;
-
-    padding:14px 28px;
-
-    background:linear-gradient(90deg,#06b6d4,#3b82f6);
-
-    border-radius:30px;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    transition:.3s;
-
+.search-input:nth-child(2) {
+    width: 65%;
 }
 
-.card a:hover{
-
-    background:linear-gradient(90deg,#2563eb,#7c3aed);
-
-    transform:scale(1.05);
-
+/* ================= 3. FLOATING CATEGORY CARDS ================= */
+/* This targets the container holding the cards and overrides Bootstrap's mt-5 */
+.hero-section + .container {
+    margin-top: -120px !important; /* Forces the cards to pull up over the orange background */
+    position: relative;
+    z-index: 10; 
 }
 
-footer{
+.category-card {
+    background: #ffffff;
+    border-radius: 30px; 
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    position: relative;
+    min-height: 300px;
+    display: block;
+    overflow: hidden;
+}
 
-    text-align:center;
+.category-card h3 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #3d4152;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
 
-    padding:30px;
+.category-card p:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #686b78;
+    margin-bottom: 10px;
+}
 
-    color:#94a3b8;
+.category-card p.text-danger {
+    color: #ff5200 !important;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
 
-    border-top:1px solid rgba(255,255,255,.1);
+/* Absolute positioning for the food/grocery card images */
+.category-card img {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    width: 250px;
+    object-fit: contain;
+}
 
+/* Generates the "Explore →" buttons purely via CSS */
+.category-card > div::after {
+    content: 'Explore →';
+    display: inline-block;
+    background-color: #ff5200;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin-top: 30px;
+    cursor: pointer;
 }
