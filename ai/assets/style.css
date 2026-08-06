@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ================= Sidebar ================= */
+.sidebar {
+    width: 310px;
+    background: #0d0d0d;
+    border-right: 1px solid #2a2a2a;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    padding: 8px 16px 16px;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    padding: 0 2px;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.top-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: #d5d5d5;
+}
+
+.new-chat {
+    height: 34px;
+    background: #232323;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
+    color: #f4f4f4;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.new-chat:hover {
+    background: #2e2e2e;
+}
+
+.menu {
+    margin-top: 9px;
+}
+
+.menu-item {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 14px;
+    border-radius: 12px;
+    color: #d6d6d6;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.menu-item:hover {
+    background: #1c1c1c;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding: 16px 16px 24px;
+}
+
+.login-box {
+    margin-top: 0; 
+    border-top: 1px solid #2a2a2a;
+    padding-top: 19px; 
+}
+
+.login-box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    padding-left: 2px;
+}
+
+.login-box p {
+    font-size: 14px;
+    color: #a9a9a9;
+    line-height: 1.65;
+    margin-bottom: 22px;
+    padding-left: 2px;
+}
+
+.login-box button {
+    width: 100%;
+    height: 44px; 
+    border: none;
+    border-radius: 999px;
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #3a3a3a;
+}
+
+/* ================= Main ================= */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    height: 48px; /* Reduced from 64px to pull items higher */
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Changed to start to push elements up */
+    padding: 8px 24px 0 24px; 
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 8px; /* Reduced gap between buttons */
+}
+
+.login-btn, .signup-btn {
+    height: 38px; /* Reduced button size */
+    border-radius: 999px;
+    padding: 0 16px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    cursor: pointer;
+}
+
+.login-btn {
+    border: none;
+    background: #fff;
+    color: #000;
+}
+
+.signup-btn {
+    border: 1px solid #3f3f3f;
+    background: #242424;
+    color: #fff;
+}
+
+/* ================= Hero ================= */
+.hero {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    margin-left: 30px; 
+    padding-top: 6vh; /* Pushes the entire block down to center it correctly */
+}
+
+.hero h1 {
+    font-size: 21px; /* Smaller font */
+    font-weight: 400; /* Lighter weight */
+    margin-bottom: 32px; /* Reduced margin to bring search bar closer */
+    letter-spacing: -0.3px;
+}
+
+/* Search */
+.search-box {
+    width: min(760px, 80%); /* Made the search bar narrower */
+    height: 52px; /* Made slightly shorter if needed, or keep 56px */
+    background: #262626;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px 0 8px; /* Pushed + icon closer to the left edge */
+}
+
+.plus {
+    font-size: 18px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 17px; /* Slightly smaller text */
+    padding: 0 14px 0 12px; /* Pushed placeholder text closer to the + icon */
+}
+
+.search-box input::placeholder {
+    color: #9a9a9a;
+}
+
+.search-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px; /* Adjusted gap to move mic slightly right */
+}
+
+.voice-btn {
+    height: 38px;
+    padding: 0 20px; /* Made the Voice pill narrower */
+    border: none;
+    border-radius: 999px;
+    background: #3a3a3a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px; /* Slightly smaller text inside pill */
+}
+
+/* Suggestions */
+.suggestions {
+    margin-top: 36px; /* Brought suggestions closer to the search bar */
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Reduced vertical spacing between suggestions */
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px; /* Smaller font size */
+    color: #b4b4b4;
+    cursor: pointer;
+}
+
+.suggestion i {
+    width: 20px;
+    text-align: center;
+    font-size: 13px; /* Smaller icons */
+    opacity: 0.75;
+    transform: translateY(1px);
+}
+
+/* ================= Footer ================= */
+.footer {
+    flex-shrink: 0; 
+    text-align: center;
+    color: #b3b3b3; 
+    font-size: 11px; /* Slightly smaller text */
+    line-height: 1.6;
+    padding: 16px 0 40px; /* Increased bottom padding to lift the footer up */
+}
+
+.footer a {
+    color: #cfcfcf;
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    .sidebar { width: 280px; }
+    .search-box { width: 88%; }
+}
