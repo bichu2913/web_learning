@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Website</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="asset/css/index.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-sm fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main Navigation">
+        
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold fs-3 text-dark" href="#">
+          Flower<span class="text-pink">.</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-lg-4 fs-5 text-secondary">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header Actions / Icons -->
+        <div class="header-icons d-none d-lg-flex gap-3 fs-5 text-dark">
+          <a href="#" class="text-dark" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+          <a href="#" class="text-dark" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#" class="text-dark" aria-label="User Account"><i class="fa-regular fa-user"></i></a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          
+          <!-- Hero Text -->
+          <div class="col-lg-6 hero-text">
+            <h1 id="hero-heading" class="display-3 fw-bold text-dark">Fresh Flowers</h1>
+            <p class="h2 text-pink mb-3 fw-normal">Natural &amp; Beautiful Flowers</p>
+            <p class="text-muted mb-4 pe-lg-5">
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Beatae 
+              Laborum Ut Minus Corrupti Dolorum Dolore Assumenda Iste 
+              Voluptate Dolorem Pariatur.
+            </p>
+            <a href="#" class="btn btn-dark-custom btn-lg px-4 py-2 rounded-pill">
+              Shop Now
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- About Us Section -->
+<section id="about" class="about-section py-5" aria-labelledby="about-heading">
+  <div class="container my-4">
+    
+    <!-- Section Heading -->
+<div class="text-center mb-5 heading-banner py-3">
+  <h2 id="about-heading" class="display-5 fw-bold m-0">
+    <span class="text-pink">About</span> <span class="text-dark">Us</span>
+  </h2>
+</div>
+    <div class="row align-items-center g-4">
+      
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm p-3 rounded-4 video-card position-relative">
+          <div class="video-container position-relative overflow-hidden rounded-3">
+            
+            <video 
+              id="aboutVideo"
+              src="https://shopping-flower.netlify.app/images/about-vid.mp4" 
+              class="w-100 object-fit-cover rounded-3" 
+              autoplay
+              loop 
+              muted 
+              playsinline>
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Banner Overlay Text -->
+            <h3 class="video-overlay-text fw-bold text-center position-absolute w-100 mb-0">
+              Best Flower Sellers
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- About Text Right Side -->
+      <div class="col-lg-6 ps-lg-5">
+        <h3 class="h2 fw-bold text-dark mb-3">Why Choose Us?</h3>
+        <p class="text-muted mb-3">
+          Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Rem Cumque Sit
+          Nemo Pariatur Corporis Perspiciatis Aspernatur A Ullam Repudiandae Autem
+          Asperiores Quibusdam Omnis Commodi Alias Repellat Illum, Unde Optio
+          Temporibus.
+        </p>
+        <p class="text-muted mb-4">
+          Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Accusantium Ea Est
+          Commodi Incidunt Magni Quia Molestias Perspiciatis, Unde Repudiandae
+          Quidem.
+        </p>
+        <a href="#" class="btn btn-dark-custom btn-lg px-4 py-2 rounded-pill">
+          Learn More
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Features Section -->
+<section class="features-section py-4 bg-light" aria-label="Store Features">
+  <div class="container">
+    <div class="row g-3">
+      
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm p-3 h-100 d-flex flex-row align-items-center gap-3">
+          <i class="fa-solid fa-truck-ramp-box fs-2 text-dark" aria-hidden="true"></i>
+          <div>
+            <h3 class="h6 fw-bold mb-1">Free Delivery</h3>
+            <p class="text-muted small mb-0">On All Orders</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm p-3 h-100 d-flex flex-row align-items-center gap-3">
+          <i class="fa-solid fa-sack-dollar fs-2 text-dark" aria-hidden="true"></i>
+          <div>
+            <h3 class="h6 fw-bold mb-1">10 Days Returns</h3>
+            <p class="text-muted small mb-0">Moneyback Guarantee</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm p-3 h-100 d-flex flex-row align-items-center gap-3">
+          <i class="fa-solid fa-gift fs-2 text-dark" aria-hidden="true"></i>
+          <div>
+            <h3 class="h6 fw-bold mb-1">Offer &amp; Gifts</h3>
+            <p class="text-muted small mb-0">On All Orders</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm p-3 h-100 d-flex flex-row align-items-center gap-3">
+          <i class="fa-solid fa-credit-card fs-2 text-dark" aria-hidden="true"></i>
+          <div>
+            <h3 class="h6 fw-bold mb-1">Secure Payments</h3>
+            <p class="text-muted small mb-0">Protected By Paypal</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="products" class="products-section py-5" aria-labelledby="products-heading">
+  
+  <div class="text-center mb-5 heading-banner py-3">
+    <h2 id="products-heading" class="display-5 fw-bold m-0">
+      <span class="text-dark">Latest</span> <span class="text-pink">Products</span>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Product 1 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-10%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-1.jpg" alt="Pink Tulip Flower Pot" class="img-fluid object-fit-contain" />
+            <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $12.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$15.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-15%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-2.jpg" alt="Colorful Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-20%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-3.jpg" alt="Red Tulip Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $14.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$15.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-17%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-4.jpg" alt="Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-3%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-5.jpg" alt="Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-18%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-6.jpg" alt="Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-10%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-7.jpg" alt="Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-5%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-8.jpg" alt="Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card border-0 shadow-sm h-100 product-card position-relative text-center p-3">
+          <span class="badge badge-discount position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">-12%</span>
+          
+          <div class="product-img-wrapper my-3 overflow-hidden position-relative">
+            <img src="https://shopping-flower.netlify.app/images/img-9.jpg" alt="Flower Pot" class="img-fluid object-fit-contain" />
+           <div class="card-action-bar d-flex align-items-center justify-content-between">
+      <button class="action-btn" title="Add to Wishlist">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+      <button class="action-btn add-to-cart-btn fw-semibold">Add To Cart</button>
+      <button class="action-btn" title="Share">
+        <i class="bi bi-share-fill"></i>
+      </button>
+    </div>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mt-auto mb-1">Flower Pot</h3>
+          <p class="price-text fw-bold fs-4 text-pink mb-0">
+            $13.99 <span class="text-muted fs-6 text-decoration-line-through fw-normal">$16.99</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="review" class="review-section py-5" aria-labelledby="review-heading">
+  <div class="container my-4">
+    
+    <!-- Heading Banner -->
+    <div class="text-center mb-5 heading-banner py-3">
+      <h2 id="review-heading" class="display-5 fw-bold m-0">
+        <span class="text-dark">Customer's</span> <span class="text-pink">Review</span>
+      </h2>
+    </div>
+
+    <!-- Review Cards Container -->
+    <div class="box-container">
+
+      <!-- Card 1 -->
+      <div class="box">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamu enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+        <div class="user">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150" alt="Customer Profile">
+          <div class="user-info">
+            <h3>John Deo</h3>
+            <span>Happy Customer</span>
+          </div>
+          <span class="fas fa-quote-right quote-icon"></span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="box">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamu enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+        <div class="user">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Customer Profile">
+          <div class="user-info">
+            <h3>John Deo</h3>
+            <span>Happy Customer</span>
+          </div>
+          <span class="fas fa-quote-right quote-icon"></span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="box">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamu enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+        <div class="user">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Customer Profile">
+          <div class="user-info">
+            <h3>John Deo</h3>
+            <span>Happy Customer</span>
+          </div>
+          <span class="fas fa-quote-right quote-icon"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> 
+<section id="contact" class="contact-section py-5" aria-labelledby="review-heading">
+  <div class="container my-4">
+    <div class="text-center mb-3 heading-banner py-3">
+      <h2 id="contact-heading" class="display-5 fw-bold m-0">
+        <span class="text-dark">Contact</span> <span class="text-pink">Us</span>
+      </h2>
+    </div>
+  <div class="row align-items-center g-4">
+     
+      <div class="col-md-6">
+        <form id="contactForm" class="contact-form-card p-4">
+          
+          <div class="mb-3">
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              class="form-control" 
+              placeholder="name" 
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-control" 
+              placeholder="email" 
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <input 
+              type="tel" 
+              id="number" 
+              name="number" 
+              class="form-control" 
+              placeholder="number" 
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-control" 
+              rows="5" 
+              placeholder="message" 
+              required
+            ></textarea>
+          </div>
+
+          <input 
+            type="submit" 
+            value="send message" 
+            class="btn btn-dark-custom btn-lg px-4 py-2 rounded-pill">
+        </form>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <div class="illustration-box">
+          <img 
+            src="https://shopping-flower.netlify.app/images/contact-img.svg" 
+            alt="illustration" 
+            class="img-fluid"
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="box-container">
+
+    <!-- Quick Links -->
+    <div class="box">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#review">Review</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Extra Links -->
+    <div class="box">
+      <h3>Extra Links</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Order</a>
+      <a href="#">My Favorite</a>
+    </div>
+
+    <!-- Locations -->
+    <div class="box">
+      <h3>Locations</h3>
+      <a href="#">Ambohipo</a>
+      <a href="#">Anosy</a>
+      <a href="#">Ivandry</a>
+      <a href="#">Ambohijatovo</a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="box">
+      <h3>Contact Info</h3>
+      <a href="tel:+261346351780">+261 34 63 517 80</a>
+      <a href="mailto:Amfanoela@Gmail.com">Amfanoela@Gmail.com</a>
+      <a href="#">Ambohipo, Antananarivo 101</a>
+      <img src="https://shopping-flower.netlify.app/images/payment.png" alt="Payment Methods" class="payment-img">
+    </div>
+
+  </div>
+
+  <!-- Credit / Copyright -->
+  <div class="credit">
+    Green <span class="text-pink">Business</span> | All Rights Reserved
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="asset/js/index.js"></script>
+</body>
+</html>
